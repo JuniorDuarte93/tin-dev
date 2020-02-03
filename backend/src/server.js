@@ -13,7 +13,7 @@ const connectedUsers = {}
 io.on('connection', socket => {
     const { user } = socket.handshake.query
     connectedUsers[user] = socket.id
-    console.log('Client connectet:', user )
+    console.log('Client connected:', user )
 
 })
 
